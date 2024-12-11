@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="sl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dobra Knjigarna</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="logo.png" alt="Dobra Knjigarna">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#katalog">Katalog</a></li>
+                <li><a href="#dodaj-oglas">Dodaj oglas</a></li>
+                <li><a href="#kontakt">Kontakt</a></li>
+                <li><button id="dark-mode-toggle">Temni način</button></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Glavna stran -->
+        <section id="katalog">
+            <h1>Novosti iz tiskarne</h1>
+            <div class="katalog">
+                <div class="knjiga">
+                    <img src="knjiga1.jpg" alt="Prava božična čarovnija">
+                    <h2>Prava božična čarovnija</h2>
+                    <p>21,90 €</p>
+                    <button class="prikazi-vec">Prikaži več</button>
+                    <p class="vec-besedila skrito">Resnično čarobna božična zgodba...</p>
+                </div>
+                <!-- Dodajte več knjig -->
+            </div>
+        </section>
+
+        <!-- Stran za dodajanje oglasa -->
+        <section id="dodaj-oglas">
+            <h1>Dodaj oglas</h1>
+            <form>
+                <label for="naslov">Naslov oglasa (obvezno):</label>
+                <input type="text" id="naslov" name="naslov" required>
+
+                <label for="kratek-opis">Kratek opis:</label>
+                <input type="text" id="kratek-opis" name="kratek-opis">
+
+                <label for="opis">Opis oglasa (obvezno):</label>
+                <textarea id="opis" name="opis" required></textarea>
+
+                <label for="podrobnosti">Podrobnosti o knjigi:</label>
+                <input type="text" id="podrobnosti" name="podrobnosti">
+
+                <button type="submit">Objavi oglas</button>
+            </form>
+        </section>
+
+        <!-- Kontaktna stran -->
+        <section id="kontakt">
+            <h1>Kontakt</h1>
+            <p>Dobra Knjigarna d.o.o.</p>
+            <p>Naslov: Knjigarska cesta 10, 1000 Ljubljana</p>
+            <p>Davčna številka: SI12345678</p>
+            <p>Pisarna: Knjigarska cesta 8, Ljubljana</p>
+            <p>Telefon: 040 123 456</p>
+            <p>Email: info@dobraknjigarna.si</p>
+        </section>
+
+        <!-- Cookie Clicker -->
+        <section id="cookie-clicker">
+            <h1>Piškotek klik</h1>
+            <button id="cookie">🍪 Klikni me!</button>
+            <p id="stevec">Klikov: 0</p>
+        </section>
+
+        <!-- Datum -->
+        <section id="datum">
+            <h1>Trenutni datum</h1>
+            <p id="trenutni-datum"></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Dobra Knjigarna</p>
+    </footer>
+</body>
+</html>
